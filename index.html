@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavis Danso - Child and Youth Care Practitioner Portfolio</title>
+    <meta name="description" content="Professional portfolio for Mavis Danso, showcasing experience and expertise in Child and Youth Care Practice, focusing on child-centered approaches.">
+    
+    <!-- Favicon (Optional - replace with a real icon file if you have one) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22> M </text></svg>">
+
+    <style>
+        /* Global Styles & Resets */
+        :root {
+            --primary-color: #005f73; /* Deep Teal */
+            --secondary-color: #0a9396; /* Lighter Teal */
+            --accent-color: #ee9b00; /* Warm Orange/Gold */
+            --light-bg: #f8f9fa; /* Very Light Gray */
+            --dark-text: #212529; /* Near Black */
+            --light-text: #ffffff;
+            --medium-gray: #6c757d; /* Medium Gray for subtle text */
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            
+            --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-secondary: Georgia, 'Times New Roman', Times, serif;
+
+            --animation-duration: 0.8s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px; /* Base font size */
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: var(--dark-text);
+            line-height: 1.7;
+            background-color: var(--light-bg);
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Container for centered content */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Headings */
+        h1, h2, h3, h4 {
+            font-family: var(--font-secondary);
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        h1 { font-size: 2.8rem; text-align: center; margin-bottom: 2rem; }
+        h2 { font-size: 2.2rem; border-bottom: 2px solid var(--secondary-color); padding-bottom: 0.5rem; margin-top: 2.5rem; }
+        h3 { font-size: 1.6rem; color: var(--secondary-color); margin-top: 1.5rem; }
+        h4 { font-size: 1.2rem; color: var(--medium-gray); font-style: italic; }
+
+        /* Paragraphs and Links */
+        p {
+            margin-bottom: 1rem;
+            color: var(--dark-text);
+        }
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* Lists */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        ul li::before {
+            content: '✓'; /* Checkmark or other marker */
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--light-text);
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none; /* Remove underline for buttons styled as links */
+        }
+        .btn:hover {
+            background-color: #d48800; /* Darker accent */
+            color: var(--light-text); /* Ensure text remains white */
+            text-decoration: none; /* Keep underline removed on hover */
+            transform: translateY(-2px);
+        }
+
+        /* Header & Navigation */
+        #main-header {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px var(--shadow-color);
+        }
+
+        #main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #main-header .logo {
+            font-family: var(--font-secondary);
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--light-text);
+        }
+        #main-header .logo span {
+            color: var(--accent-color);
+        }
+
+        #main-nav ul {
+            display: flex;
+        }
+
+        #main-nav ul li {
+            margin-left: 25px;
+            padding-left: 0; /* Override default list style */
+        }
+        #main-nav ul li::before {
+            content: none; /* Remove default list marker */
+        }
+
+        #main-nav ul li a {
+            color: var(--light-text);
+            font-weight: bold;
+            padding: 5px 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        #main-nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        #main-nav ul li a:hover,
+        #main-nav ul li a.active {
+            color: var(--accent-color);
+            text-decoration: none; /* Remove underline on hover */
+        }
+        #main-nav ul li a:hover::after,
+        #main-nav ul li a.active::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(0, 95, 115, 0.8), rgba(0, 95, 115, 0.8)), url('1.jpg') no-repeat center center/cover;
+            color: var(--light-text);
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 20px;
+        }
+        #hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--light-text);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-bottom: none; /* Override general h1 style */
+            animation: fadeInDown var(--animation-duration) ease-out;
+        }
+        #hero p.lead {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            animation: fadeInUp var(--animation-duration) ease-out 0.3s;
+            animation-fill-mode: backwards; /* Start invisible before animation */
+        }
+        #hero .btn {
+            animation: fadeInUp var(--animation-duration) ease-out 0.6s;
+            animation-fill-mode: backwards;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        section:nth-of-type(even) {
+            background-color: #ffffff; /* Alternate background */
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* About Me Section */
+        #about .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        #about img {
+            width: 100%;
+            max-width: 300px; /* Control image size */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            object-fit: cover; /* Ensure image covers area nicely */
+            justify-self: center; /* Center image in grid cell */
+            animation: zoomIn var(--animation-duration) ease-out;
+        }
+
+        /* Philosophy Section */
+        #philosophy .value-item {
+            background-color: var(--light-bg);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--secondary-color);
+            box-shadow: 0 2px 8px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        #philosophy .value-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 95, 115, 0.2);
+        }
+        #philosophy .value-item h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            background: #ffffff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            border-left: 5px solid var(--accent-color);
+        }
+        .experience-item h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        .experience-item .date {
+            font-weight: bold;
+            color: var(--medium-gray);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .experience-item ul {
+            padding-left: 0; /* Reset padding for nested list */
+        }
+        .experience-item ul li {
+            padding-left: 1.5em; /* Ensure bullet point alignment */
+        }
+        .experience-item ul li::before {
+             content: '•'; /* Simple bullet for experience points */
+             color: var(--secondary-color);
+             font-size: 1.2em;
+             top: -2px; /* Adjust vertical alignment */
+        }
+
+        /* Child-Centered Practice Section */
+        #child-centered .practice-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        #child-centered .practice-card {
+            background-color: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            border-top: 4px solid var(--secondary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+         #child-centered .practice-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0, 95, 115, 0.2);
+        }
+        #child-centered .practice-card h3 {
+             margin-top: 0;
+             margin-bottom: 1rem;
+             color: var(--primary-color);
+        }
+        #child-centered img.inline-img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Cover the area */
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            box-shadow: 0 2px 8px var(--shadow-color);
+        }
+
+        /* Skills & Training Section */
+        #skills .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+        #skills .skill-category h3 {
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+        }
+        #skills ul li::before {
+            content: '»'; /* Different marker for skills */
+            color: var(--primary-color);
+        }
+        #skills img {
+             width: 100%;
+             height: auto;
+             max-height: 350px; /* Limit height */
+             object-fit: cover;
+             border-radius: 8px;
+             box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+
+        /* Contact Section */
+        #contact {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            text-align: center;
+        }
+        #contact h2 {
+            color: var(--light-text);
+            border-bottom-color: var(--accent-color);
+        }
+        #contact p {
+            font-size: 1.1rem;
+            color: var(--light-bg); /* Lighter text on dark background */
+            margin-bottom: 1.5rem;
+        }
+        #contact a {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        #contact a:hover {
+            color: #fff; /* White on hover */
+        }
+        #contact .contact-details {
+            margin-bottom: 2rem;
+        }
+         #contact .contact-details p {
+            margin-bottom: 0.5rem; /* Less spacing between contact details */
+         }
+
+        /* Footer */
+        #main-footer {
+            background-color: var(--dark-text);
+            color: var(--medium-gray);
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        /* Scroll Animation Trigger */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            html { font-size: 15px; } /* Adjust base font size */
+            
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            
+            #main-header .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            #main-header .logo {
+                margin-bottom: 0.5rem;
+            }
+            #main-nav ul {
+                justify-content: center;
+                margin-top: 0.5rem;
+            }
+            #main-nav ul li {
+                margin: 0 10px; /* Adjust spacing */
+            }
+
+            #hero { min-height: 70vh; }
+            #hero h1 { font-size: 2.8rem; }
+            #hero p.lead { font-size: 1.2rem; }
+
+            #about .about-content {
+                grid-template-columns: 1fr; /* Stack elements */
+                text-align: center;
+            }
+             #about img {
+                margin-bottom: 2rem;
+                max-width: 250px; /* Smaller image on mobile */
+                justify-self: center; /* Ensure centering in single column */
+            }
+            
+            #skills .skills-container {
+                grid-template-columns: 1fr; /* Stack skills */
+            }
+            #skills img {
+                margin-top: 2rem; /* Add space when stacked */
+                max-height: 250px;
+            }
+            
+            #child-centered .practice-grid {
+                 grid-template-columns: 1fr; /* Stack cards */
+            }
+        }
+
+        @media (max-width: 480px) {
+             html { font-size: 14px; }
+             h1 { font-size: 2.2rem; }
+             #main-nav ul li { margin: 0 5px; } /* Tighter spacing */
+             #main-nav ul li a { font-size: 0.9rem; }
+             .btn { padding: 10px 20px; font-size: 0.9rem; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">Mavis <span>Danso</span></div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#philosophy">My Philosophy</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills & Training</a></li>
+                    <li><a href="#child-centered">Child-Centered</a></li>
+                    <li><a href="#supporting-conflict">Conflict</a></li>
+                    <li><a href="#listening-displaced">Displacement</a></li>
+                    <li><a href="#systemic-discrimination">Justice</a></li>
+                    <li><a href="#honouring-indigenous">Indigenous Focus</a></li>
+                    <li><a href="#politics-context">Politics</a></li>
+                    <li><a href="#addressing-gbv">GBV</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#references">References</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Mavis Danso</h1>
+        <p class="lead">Dedicated Child and Youth Care Practitioner committed to fostering inclusive, supportive environments where young people can thrive.</p>
+        <a href="#about" class="btn">Learn More About Me</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="fade-in-section">
+        <div class="container">
+            <h2>About Me: My Journey in CYCP</h2>
+            <div class="about-content">
+                <img src="2.jpg" alt="Professional portrait or relevant abstract image of Mavis Danso"> 
+                <div>
+                    <h3>Who Am I</h3>
+                    <p>My name is Mavis Danso and I am a Child and Youth Care Practitioner (CYCP), currently completing my final semester of study. My professional journey is driven by a deep passion for supporting young people, particularly those who have experienced trauma, displacement, and systemic oppression.</p>
+                    <p>I aspire to make a meaningful difference in the lives of children and youth facing adversity. I am committed to principles of social justice and aim to contribute positively within school, community program, and residential settings. My goal is to help create environments where young people feel inherently safe, valued, and empowered to reach their fullest potential.</p>
+                    
+                    <h3>Commitment to the Field</h3>
+                     <p>My dedication stems from the belief that every young person deserves to be seen, heard, and treated with dignity. I recognize the profound impact that adversity and systemic barriers can have, and I am motivated to be an agent of change, fostering resilience and well-being in the individuals I work with.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values & Philosophy Section -->
+    <section id="philosophy" class="fade-in-section">
+        <div class="container">
+            <h2>My Core Values and Professional Philosophy</h2>
+            <p>My practice is grounded in a set of core beliefs that guide my interactions and interventions. I believe strongly that youth deserve attention, validation, and meaningful participation in decisions affecting them.</p>
+            
+            <div class="value-item">
+                <h3>Valuing Uniqueness & Dignity</h3>
+                <p>I view each young person as a unique individual possessing inherent strengths, potential, and aspirations. Treating every interaction with dignity and respect is paramount.</p>
+            </div>
+            
+            <div class="value-item">
+                 <h3>Anti-Oppressive & Anti-Racist Stance</h3>
+                 <p>My work is intentionally based on anti-oppressive and anti-racist principles, coupled with a deep respect for diversity. I acknowledge the pervasive influence of power structures and marginalization on vulnerable children and families. I actively strive to dismantle these barriers through advocacy, ongoing education, and culturally responsive practice.</p>
+            </div>
+
+            <div class="value-item">
+                <h3>Trauma-Informed Care</h3>
+                <p>I am committed to developing and implementing trauma-informed care practices with humility. Understanding the impact of trauma is crucial for creating effective support mechanisms that promote healing and resilience. As Bargeman, Smith, & Wekerle (2021) suggest, this requires patience, consistency, and a focus on safety and empowerment.</p>
+            </div>
+            
+            <div class="value-item">
+                <h3>Strengths-Based Approach</h3>
+                <p>I believe in focusing on the strengths and capabilities of young people, rather than solely on their challenges. This approach empowers them, builds self-esteem, and fosters a sense of agency in their own lives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="fade-in-section">
+        <div class="container">
+            <h2>Professional Experience Highlights</h2>
+            <p>My practical experience has provided me with invaluable opportunities to apply my knowledge and skills in real-world settings, working directly with children, youth, and families.</p>
+
+            <div class="experience-item">
+                <h3>Emergency Educational Assistant / Lunchroom Supervisor</h3>
+                <h4>Peel District School Board (Great Lakes PS & Hanover PS)</h4>
+                <span class="date">Jan 2023 – Present</span>
+                <ul>
+                    <li>Provided comprehensive physical, emotional, and educational support to students with diverse special needs (behavioral, cognitive, physical).</li>
+                    <li>Fostered positive, respectful interactions with students and families to promote well-being and development.</li>
+                    <li>Collaborated effectively with teachers and staff to design, implement, and adapt individualized learning and behavioral strategies.</li>
+                    <li>Guided students in managing behavioral challenges, teaching coping mechanisms and strategies for improvement.</li>
+                    <li>Monitored student progress meticulously, recording data to inform academic and behavioral assessments.</li>
+                    <li>Actively contributed to creating and maintaining a productive, safe, and inclusive learning environment for all students.</li>
+                     <li>Maintained professional communication channels ensuring appropriate information sharing while upholding confidentiality.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Co-Op Student Placement (CYCP Focus)</h3>
+                <h4>Peel District School Board (Royal Orchard Middle School)</h4>
+                <span class="date">Sept 2022 – Dec 2022</span>
+                <ul>
+                    <li>Provided individual counseling and targeted support to enhance students' emotional well-being.</li>
+                    <li>Facilitated support groups and provided immediate assistance to staff and students following traumatic events.</li>
+                    <li>Developed accessible educational resources for families and staff on topics related to student well-being and academic success.</li>
+                    <li>Coordinated community programming initiatives and referred students and families to relevant external resources.</li>
+                    <li>Advocated consistently for students, ensuring their voices were heard and their needs prioritized within the school community.</li>
+                </ul>
+            </div>
+            
+             <div class="experience-item">
+                <h3>Customer Service Roles (Relevant Skills)</h3>
+                <h4>Supreme Travel Agency (Apr 2021-Present) | Sofina Foods Inc. (2014–2019) | Oceanic Trading Co. (2011–2014)</h4>
+                 <span class="date">2011 – Present (Combined)</span>
+                <ul>
+                    <li>Consistently provided exceptional customer service, demonstrating strong interpersonal, communication, and problem-solving skills.</li>
+                    <li>Managed inquiries, resolved complex issues promptly and professionally, ensuring client/customer satisfaction.</li>
+                    <li>Handled sensitive information with discretion and maintained accurate records.</li>
+                    <li>Demonstrated adaptability and organizational skills in fast-paced, sometimes high-pressure environments.</li>
+                    <li>(Note: These roles developed foundational skills in communication, conflict resolution, and organization, which are transferable to CYCP.)</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Child-Centered Practice in Action Section -->
+    <section id="child-centered" class="fade-in-section">
+        <div class="container">
+            <h2>Child-Centered Practice in Action</h2>
+            <p>My approach is fundamentally child-centered, recognizing that children and youth are the experts in their own lives. This means prioritizing their perspectives, fostering their autonomy, and creating environments where they feel safe to explore, express, and grow.</p>
+
+
+            <div class="video-container" style="margin: 2rem 0; position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio */ height: 0; overflow: hidden; max-width: 100%; background: #000;">
+                <iframe 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                    src="https://www.youtube.com/embed/ebxt4UrU5qY" 
+                    title="Ways to Play: Child-Centered Play" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <h3>Following the Child's Lead</h3>
+                    <p>Inspired by principles of child-centered play therapy, I strive to follow the child's lead in interactions and activities. This means observing their interests, validating their choices, and allowing them to guide the direction of play or conversation. It builds trust and empowers the child.</p>
+                    <img src="3.jpg" alt="Abstract image representing guidance or listening" class="inline-img">
+                </div>
+
+                <div class="practice-card">
+                    <h3>Utilizing Expressive Arts</h3>
+                    <p>Recognizing that young people often communicate best through non-verbal means (Bendall et al., 2021), I incorporate expressive arts like journaling, drawing, movement, and therapeutic play. These methods provide safe outlets for emotional expression, processing experiences, and exploring identity.</p>
+                </div>
+
+                 <div class="practice-card">
+                    <h3>Creating Safe & Affirming Spaces</h3>
+                    <p>A core tenet of my practice is establishing physically and emotionally safe spaces. This involves setting predictable routines, maintaining clear but gentle boundaries, actively listening without judgment, and affirming the child's feelings and experiences. Safety is the foundation for therapeutic work and growth.</p>
+                </div>
+                
+                <div class="practice-card">
+                    <h3>Reflective Listening & Validation</h3>
+                    <p>Actively listening to understand the child's perspective and reflecting their feelings back to them ("It sounds like you're feeling frustrated right now") helps them feel heard and understood. Validation normalizes their emotional experience and strengthens the therapeutic relationship.</p>
+                     <img src="4.jpg" alt="Image representing connection or communication" class="inline-img">
+                </div>
+
+                <div class="practice-card">
+                    <h3>Culturally Responsive Care</h3>
+                    <p>My research and practice emphasize culturally responsive care, especially for displaced or marginalized youth. This involves understanding the intersection of identity, culture, and mental health, respecting diverse backgrounds, and adapting interventions to be culturally relevant and affirming.</p>
+                </div>
+                
+                 <div class="practice-card">
+                    <h3>Advocacy and Empowerment</h3>
+                    <p>Child-centered practice extends to advocating for the child's needs within larger systems (school, community). It also involves empowering children and youth by helping them develop self-advocacy skills, understand their rights, and participate actively in decisions affecting them.</p>
+                </div>
+            </div>
+             <p style="margin-top: 2rem;"><em>Insights from 'Ways to Play: Child-Centered Play': The video reinforces the importance of non-directive approaches, allowing children the space to process their world through play. Key takeaways include the power of observation, reflecting emotions, setting limits gently without criticism, and trusting the child's innate capacity for growth and healing when provided with a supportive environment. These principles directly inform my hands-on work.</em></p>
+        </div>
+    </section>
+
+
+
+
+    <!-- Supporting Children in Conflict Section -->
+    <section id="supporting-conflict" class="fade-in-section">
+        <div class="container">
+            <h2>Supporting Children Affected by Conflict</h2>
+
+            <h3>Understanding Conflict's Impact</h3>
+            <p>As a CYCP, it's crucial to recognize situations that compromise a child's sense of safety, including armed conflict, displacement, domestic violence, intergenerational trauma, and systemic oppression. These disruptions are not just background noise; they are formative experiences shaping their worldview. The loss of a home due to war or fleeing unsafe family conditions profoundly affects a child's emotional, psychological, and developmental well-being (Bonta & Andrews, 2023).</p>
+
+            <h3>Short & Long-Term Impacts</h3>
+            <p>Conflict's impact varies with a child's developmental stage, often manifesting as intense fear, separation anxiety, sleep disturbances, and difficulty concentrating. Their bodies can remain in a heightened state of alertness, making self-regulation challenging. Unresolved conflict trauma can lead to long-term issues like post-traumatic stress disorder (PTSD), developmental delays, emotional numbness, depression, and difficulty forming healthy attachments (Baglivio & Wolff, 2021). Children might internalize blame and guilt, negatively impacting self-worth. Without appropriate support, this trauma can carry into adulthood.</p>
+
+            <h3>My Support Strategies</h3>
+            <p>My strategy is rooted in a trauma-informed and strengths-based approach. Establishing safety and predictability is key: maintaining consistent routines, being emotionally available, and offering choices empower the child. I utilize sensory regulation strategies like breathing exercises, grounding activities, and access to calm-down spaces to support emotional regulation (Leckning et al., 2023). Building authentic relationships involves validating their stories and reminding them of their resilience. I also help children reconnect with peers and establish trust, fostering supportive networks.</p>
+        </div>
+    </section>
+    
+
+    <!-- Listening to Children & Supporting Displaced Youth Section -->
+    <section id="listening-displaced" class="fade-in-section">
+        <div class="container">
+            <h2>Listening to Children: Displacement and the Right to Be Heard (UNCRC Article 12)</h2>
+
+            <h3>Impact of Displacement</h3>
+            <p>Children displaced by conflict or natural disasters often face significant emotional distress, identity loss, and cultural disconnection (Gkintoni, Boutsinas, & Kourkoutas, 2022). Torn from familiar surroundings, they are thrust into environments that can feel culturally alien. This displacement manifests as grief, compounded by struggles with new languages, customs, and social norms. The loss of belonging makes forming new relationships difficult, highlighting the importance of listening to their experiences as mandated by UNCRC Article 12.</p>
+
+            <h3>Supporting Displaced Youth in Ontario</h3>
+            <p>Supporting displaced youth involves creating culturally safe spaces where they feel heard, understood, and valued, allowing them to begin healing. Acknowledging and celebrating their cultural backgrounds is vital. For instance, developing initiatives like a visual heritage wall in a community center allows children to express their cultural identity through art and artifacts (Rider et al., 2021). This fosters pride, helps them reconnect with their roots, and educates others.</p>
+
+            <h3>Policy Considerations</h3>
+            <p>Stronger policies are needed to guarantee displaced youth access to culturally competent mental health services and educational support tailored to newcomer/refugee needs (Chipalo, 2021). Many have experienced significant trauma, making specialized services essential. Funding should support programs incorporating diverse cultural perspectives in education, improving academic outcomes and enhancing social adaptation, ensuring they have equal opportunities to thrive.</p>
+        </div>
+    </section>
+
+
+    <!-- Addressing Systemic Discrimination Section -->
+    <section id="systemic-discrimination" class="fade-in-section">
+        <div class="container">
+            <h2>Addressing Systemic Discrimination in the Justice System</h2>
+
+            <h3>Issues Affecting Black and Indigenous Youth</h3>
+            <p>Systemic discrimination within the judicial system disproportionately impacts Black and Indigenous youth, leading to their overrepresentation (Bargeman, Smith, & Wekerle, 2021). Racial profiling, stereotypes, and biases influence arrest rates, sentencing, and access to diversion programs. These youth often face harsher sentences and are less likely to benefit from rehabilitative alternatives. This pattern of over-policing creates barriers to justice and equity, with harmful short-term and long-term consequences, potentially leading to continued system involvement (Bendall et al., 2021). Addressing this requires reforms, decolonization of justice practices, and understanding the socio-political factors contributing to criminalization.</p>
+
+            <h3>My Role as a CYCP</h3>
+            <p>I advocate for a restorative justice approach emphasizing accountability, healing, and reconciliation, providing youth opportunities to take responsibility and understand their impact. Engaging in dialogues with victims and the community is crucial. Primarily important is ensuring youth understand their legal rights and can navigate the justice system fairly (Bonta & Andrews, 2023). For example, accompanying an individual to court, helping them prepare, and articulating their experiences can reduce fear and empower them within the judicial process.</p>
+
+            <h3>Ongoing Education for Justice Equity</h3>
+            <p>Staying informed about justice equity is vital. Attending workshops on racial profiling and the experiences of marginalized youth, and following organizations like Justice for Children and Youth, provides essential knowledge. Continuous learning allows me to better support youth and advocate for systemic change to dismantle discriminatory structures within the justice system (Baglivio & Wolff, 2021).</p>
+        </div>
+    </section>
+
+
+
+    <!-- Honouring Indigenous Children and Families Section -->
+    <section id="honouring-indigenous" class="fade-in-section">
+        <div class="container">
+            <h2>Honouring Indigenous Children and Families: A Commitment to Reconciliation</h2>
+
+            <h3>Why It Matters</h3>
+            <p>The overrepresentation of Indigenous children in care reflects a legacy of systemic harm rooted in colonialism, which separated children from their families, cultures, and communities (Hoover & Bostic, 2021). The residential school system and ongoing issues in the child welfare system exemplify policies causing intergenerational trauma. Challenging anti-Indigenous racism is a moral imperative for reconciliation and justice.</p>
+
+            <h3>My Learning Journey</h3>
+            <p>My understanding is shaped by the Truth and Reconciliation Commission and teachings from Indigenous Elders, highlighting the need for systemic change in education, child welfare, and cultural revitalization. This guides my practice towards culturally sensitive and restorative approaches. I recognize the importance of cultural continuity – ensuring Indigenous children maintain connections to their language, practices, and community – and the significance of land-based healing, which emphasizes the therapeutic connection to ancestral lands and traditional knowledge (McPherson et al., 2021).</p>
+
+            <h3>My Actions Towards Reconciliation</h3>
+            <p>I strive to integrate cultural revitalization into my practice. This includes consistently incorporating land acknowledgments, recognizing the traditional territories and their stewards. I prioritize using Indigenous-authored children’s books in educational settings to offer authentic perspectives (Roach et al., 2023). Building relationships with local Indigenous organizations is crucial for accessing resources, collaborating effectively, and continuously learning about the historical and contemporary challenges faced by Indigenous communities, thereby creating culturally aware and supportive environments.</p>
+        </div>
+    </section>
+
+
+    <!-- Childhood and Politics in Context Section -->
+    <section id="politics-context" class="fade-in-section">
+        <div class="container">
+            <h2>Childhood and Politics in Context: Global Awareness</h2>
+
+            <h3>Understanding Global Impacts</h3>
+            <p>Staying aware of global issues affecting youth, particularly in politically unstable regions, is essential. Connecting via social media and news briefings reveals the realities children face in conflict zones – witnessing devastation that threatens their safety and undermines prospects for education and mental health (Hoffmann et al., 2021). This awareness informs my understanding of the psychological challenges faced by these youth and strengthens my commitment to amplifying their voices.</p>
+
+            <h3>Support Strategies for Affected Youth</h3>
+            <p>Supporting youth impacted by political instability involves ensuring their narratives are heard. Listening validatingly creates agency and empowerment. Providing immediate emotional support and safe environments allows them to process trauma. Advocating for their rights in educational settings ensures access to necessary resources. Digital storytelling, using photos, videos, and narratives, can be a powerful tool for self-expression and giving meaning to their experiences (Mann et al., 2021). This empowers youth, fosters community awareness, and contributes to a global dialogue.</p>
+        </div>
+    </section>
+
+
+    <!-- Addressing Gender-Based Violence Section -->
+    <section id="addressing-gbv" class="fade-in-section">
+        <div class="container">
+            <h2>Addressing Gender-Based Violence (GBV)</h2>
+
+            <h3>My Commitments</h3>
+            <p>I am deeply committed to challenging gender-based violence by creating safe spaces where young people feel comfortable disclosing and processing their experiences, breaking the silence and isolation often associated with trauma. Empowering youth to reclaim their voices and recognize their inherent value is paramount. Consent education is integral, ensuring youth understand their rights, boundaries, and the importance of mutual respect in relationships, emphasizing equity for all genders (McGuire, Steele, & Singh, 2021).</p>
+
+            <h3>Supporting Youth Experiencing GBV</h3>
+            <p>Supporting youth requires a compassionate, trauma-informed approach. Creating an environment for validation without judgment is key. Making appropriate referrals to trusted services like the Assaulted Women's Helpline or local organizations specializing in sexual assault and intimate partner violence is crucial (Paulus et al., 2021). Facilitating group sessions on healthy relationships—discussing boundaries, mutual respect, communication, and trust—educates and offers solidarity, reminding youth they are not alone.</p>
+
+            <h3>Collaboration and Resources</h3>
+            <p>I collaborate with community organizations like YWCA Toronto, METRAC, and Love146. These partnerships are essential for ensuring young people have access to a comprehensive network of care and support tailored to their needs.</p>
+        </div>
+    </section>
+
+
+    <!-- Resources Section -->
+    <section id="resources" class="fade-in-section">
+        <div class="container">
+            <h2>Resources for Supporting Youth</h2>
+            <p>Navigating the challenges faced by youth affected by conflict, displacement, trauma, and systemic issues requires effective tools and support networks. The following resources offer valuable guidance and programs:</p>
+            <ul>
+                <li><strong>Children and War Foundation:</strong> Offers interventions and practical manuals for trauma support for children impacted by conflict, addressing emotional and psychological effects (Gkintoni, Boutsinas, & Kourkoutas, 2022).</li>
+                <li><strong>International Rescue Committee (IRC) Youth Programs:</strong> Supports refugee youth integration through education, social support, and mental health services (Rider et al., 2021).</li>
+                <li><strong>Newcomer Youth Settlement Guides (Various Organizations):</strong> Provide practical advice for youth arriving in Canada (e.g., housing, education, healthcare, cultural adaptation) (Chipalo, 2021).</li>
+                <li><strong>Bridge Kids Podcast:</strong> Platform for youth to share migration stories, fostering connection and empowerment through storytelling (McGuire, Steele, & Singh, 2021).</li>
+                <li><strong>MindUP Curriculum:</strong> Evidence-based social-emotional learning program helping youth develop emotional regulation, mindfulness, and resilience, useful in trauma contexts (Paulus et al., 2021).</li>
+                <li><strong>Healing in Harmony Program:</strong> Combines music therapy with trauma recovery, offering a therapeutic outlet for self-expression and healing (Hoffmann et al., 2021).</li>
+                <li><strong>Covenant House Trafficking Toolkit:</strong> Supports identification, prevention, and trauma-informed care for displaced and at-risk youth vulnerable to trafficking (Mann et al., 2021).</li>
+                <li><strong>UNICEF Youth Voices Platform:</strong> Space for young people globally to share experiences and advocate on issues like youth rights, education, and well-being (Hoover & Bostic, 2021).</li>
+                 <li><strong>Justice for Children and Youth:</strong> Advocates for the rights of young people within the Canadian legal system and provides resources.</li>
+                 <li><strong>Local Indigenous Organizations:</strong> Essential partners for accessing culturally relevant resources, programs, and knowledge (Consult local Friendship Centres, community groups).</li>
+                 <li><strong>Assaulted Women's Helpline (Ontario):</strong> Provides confidential support for individuals experiencing abuse.</li>
+                 <li><strong>YWCA Toronto, METRAC, Love146:</strong> Organizations offering programs and support related to GBV and youth well-being.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- References Section -->
+    <section id="references" class="fade-in-section">
+        <div class="container">
+            <h2>References</h2>
+            <p><small>Baglivio, M. T., & Wolff, K. T. (2021). Positive childhood experiences (PCE): Cumulative resiliency in the face of adverse childhood experiences. <em>Youth violence and juvenile justice, 19</em>(2), 139-162.</small></p>
+            <p><small>Bargeman, M., Smith, S., & Wekerle, C. (2021). Trauma-informed care as a rights-based “standard of care”: A critical review. <em>Child Abuse & Neglect, 119</em>, 104762.</small></p>
+            <p><small>Bendall, S., Eastwood, O., Cox, G., Farrelly-Rosch, A., Nicoll, H., Peters, W., ... & Scanlan, F. (2021). A systematic review and synthesis of trauma-informed care within outpatient and counseling health settings for young people. <em>Child maltreatment, 26</em>(3), 313-324.</small></p>
+            <p><small>Bonta, J., & Andrews, D. A. (2023). <em>The psychology of criminal conduct</em>. Routledge.</small></p>
+            <p><small>Chipalo, E. (2021). Is trauma focused-cognitive behavioral therapy (TF-CBT) effective in reducing trauma symptoms among traumatized refugee children? A systematic review. <em>Journal of child & adolescent trauma, 14</em>(4), 545-558.</small></p>
+            <p><small>Gkintoni, E., Boutsinas, B., & Kourkoutas, E. (2022). Developmental trauma and neurocognition in young adults: A systematic review. <em>EDULEARN22 Proceedings</em>, 5656-5662.</small></p>
+            <p><small>Hoffmann, J. A., Pergjika, A., Konicek, C. E., & Reynolds, S. L. (2021). Pharmacologic management of acute agitation in youth in the emergency department. <em>Pediatric emergency care, 37</em>(8), 417-422.</small></p>
+            <p><small>Hoover, S., & Bostic, J. (2021). Schools as a vital component of the child and adolescent mental health system. <em>Psychiatric services, 72</em>(1), 37-48.</small></p>
+            <p><small>Leckning, B., Condon, J. R., Das, S. K., He, V., Hirvonen, T., & Guthridge, S. (2023). Mental health-related hospitalisations associated with patterns of child protection and youth justice involvement during adolescence: a retrospective cohort study using linked administrative data from the Northern Territory of Australia. <em>Children and Youth Services Review, 145</em>, 106771.</small></p>
+            <p><small>Mann, M., McMillan, J. E., Silver, E. J., & Stein, R. E. (2021). Children and adolescents with disabilities and exposure to disasters, terrorism, and the COVID-19 pandemic: A scoping review. <em>Current psychiatry reports, 23</em>, 1-12.</small></p>
+            <p><small>McGuire, A., Steele, R. G., & Singh, A. (2021). Systematic review on the application of trauma-focused cognitive behavioral therapy (TF-CBT) for preschool-aged children. <em>Clinical Child and Family Psychology Review, 24</em>(1), 20-37.</small></p>
+            <p><small>McPherson, L., Vosz, M., Gatwiri, K., Parmenter, N., Macnamara, N., Mitchell, J., & Tucci, J. (2021). What does research tell us about young people’s participation in decision making in residential care? A systematic scoping review. <em>Children and Youth Services Review, 122</em>, 105899.</small></p>
+            <p><small>Paulus, F. W., Ohmann, S., Möhler, E., Plener, P., & Popow, C. (2021). Emotional dysregulation in children and adolescents with psychiatric disorders. A narrative review. <em>Frontiers in psychiatry, 12</em>, 628252.</small></p>
+            <p><small>Rider, E. A., Ansari, E., Varrin, P. H., & Sparrow, J. (2021). Mental health and wellbeing of children and adolescents during the covid-19 pandemic. <em>bmj, 374</em>.</small></p>
+            <p><small>Roach, E. L., Haft, S. L., Huang, J., & Zhou, Q. (2023). Systematic review: The association between race-related stress and trauma and emotion dysregulation in youth of color. <em>Journal of the American Academy of Child & Adolescent Psychiatry, 62</em>(2), 190-207.</small></p>
+        </div>
+    </section>
+    
+    <!-- Skills & Training Section -->
+    <section id="skills" class="fade-in-section">
+        <div class="container">
+             <h2>Education, Skills & Professional Development</h2>
+             <div class="skills-container">
+                 <div>
+                    <h3>Formal Education</h3>
+                    <ul>
+                         <li><strong>Bachelor of Child and Youth Care</strong> <br> Humber College Institute of Technology and Advanced Learning (2021 – Present)</li>
+                         <li><strong>Tourism-Travel Services Management</strong> <br> Humber College Institute of Technology and Advanced Learning (2019 – 2021)</li>
+                         <li><strong>Developmental Services Worker (DSW)</strong> <br> CLI College of Business, Health, and Technology (2001 – 2003)</li>
+                    </ul>
+
+                    <h3>Core CYCP Skills</h3>
+                     <ul>
+                        <li>Counseling and Emotional Support</li>
+                        <li>Crisis Intervention & Management (CPI Certified)</li>
+                        <li>Behavior Management & Strategy Development</li>
+                        <li>Trauma-Informed Care Practices</li>
+                        <li>Individual & Group Facilitation</li>
+                        <li>Needs Assessment & Goal Setting</li>
+                        <li>Program Development & Implementation</li>
+                        <li>Community Outreach & Resource Coordination</li>
+                        <li>Advocacy for Children and Youth</li>
+                        <li>Cultural Competence & Diversity Awareness</li>
+                        <li>Building Therapeutic Relationships</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Professional Training & Certifications</h3>
+                    <ul>
+                        <li>Tri-Council Policy Statement: Ethical Conduct for Research (TCP 2: CORE 2022)</li>
+                        <li>Standard First Aid and Level “C” CPR Certified</li>
+                        <li>CPI (Crisis Prevention Intervention) Certified</li>
+                        <li>Worker Health and Safety Awareness in 4 Steps</li>
+                        <li>Accessibility for Ontarians with Disabilities Act (AODA) Trained</li>
+                        <li>LivingWorks START Certification (Suicide Prevention)</li>
+                        <li>Pharmacology Certification (Relevant to DSW)</li>
+                        <li>Canada Specialist Program & Accreditation (From Travel)</li>
+                    </ul>
+                    
+                    <h3>General Professional Skills</h3>
+                     <ul>
+                        <li>Strong Interpersonal & Communication Skills (Verbal & Written)</li>
+                        <li>Active Listening & Empathy</li>
+                        <li>Critical Thinking & Problem Solving</li>
+                        <li>Collaboration with Families, Educators & Staff</li>
+                        <li>Confidentiality & Discretion</li>
+                        <li>Adaptability & Flexibility</li>
+                        <li>Organization & Record Keeping</li>
+                         <li>Physical Support Capability (Personal Care, Lifting - as required in EA roles)</li>
+                    </ul>
+                     <img src="5.jpg" alt="Image representing learning, growth or community" style="margin-top: 2rem;">
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I am eager to apply my skills and passion to a challenging and rewarding Behavioral Educational Assistant or CYCP role. Please feel free to reach out to discuss potential opportunities or collaborations.</p>
+            <div class="contact-details">
+                 <p><strong>Mavis Danso</strong></p>
+                 <p><a href="mailto:dansomavis1@yahoo.com">dansomavis1@yahoo.com</a></p>
+                 <p><a href="tel:647-687-0180">647-687-0180</a></p>
+                 <p>Brampton, ON</p>
+                 <p><em>References available upon request.</em></p>
+            </div>
+             <a href="mailto:dansomavis1@yahoo.com" class="btn">Send Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Mavis Danso. All Rights Reserved. | CYCP Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set Current Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Smooth Scrolling for Navigation Links
+        const navLinks = document.querySelectorAll('#main-nav a[href^="#"]');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                let targetId = this.getAttribute('href');
+                let targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // Calculate offset needed due to fixed header
+                    let headerOffset = document.getElementById('main-header').offsetHeight + 10; // Add a little extra padding
+                    let elementPosition = targetElement.getBoundingClientRect().top;
+                    let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+                
+                // Optional: Close mobile menu if you add one later
+            });
+        });
+        
+        // Active Link Highlighting on Scroll (Basic)
+        const sections = document.querySelectorAll('section[id]');
+        const headerHeight = document.getElementById('main-header').offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            let scrollY = window.pageYOffset;
+            
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - headerHeight - 50; // Adjust offset as needed
+                let sectionId = current.getAttribute('id');
+                
+                let navLink = document.querySelector('#main-nav a[href="#' + sectionId + '"]');
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelectorAll('#main-nav a').forEach(link => link.classList.remove('active'));
+                    if(navLink) {
+                        navLink.classList.add('active');
+                    }
+                } else {
+                     if(navLink) {
+                        navLink.classList.remove('active');
+                    }
+                }
+            });
+            
+             // Special case for top of page (Hero)
+             let heroLink = document.querySelector('#main-nav a[href="#hero"]');
+             if (scrollY < sections[0].offsetTop - headerHeight * 2) { // Give hero section more space at top
+                 document.querySelectorAll('#main-nav a').forEach(link => link.classList.remove('active'));
+                 if (heroLink) heroLink.classList.add('active');
+             }
+             
+        });
+
+
+        // Scroll Animations for Sections
+        const fadeElements = document.querySelectorAll('.fade-in-section');
+
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Optional: Stop observing once visible to save resources
+                    // observer.unobserve(entry.target); 
+                } 
+                // Optional: Remove 'visible' class if element scrolls out of view 
+                // else {
+                //     entry.target.classList.remove('visible');
+                // }
+            });
+        }, {
+            root: null, // relative to the viewport
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        fadeElements.forEach(el => {
+            scrollObserver.observe(el);
+        });
+
+    </script>
+
+</body>
+</html>
